@@ -5,8 +5,8 @@
   "pool_size": 4,
   "ligature": true,
   "feature_freeze": {
-    "cv01": "ignore",
-    "cv02": "ignore",
+    "cv01": "enable",
+    "cv02": "enable",
     "cv03": "ignore",
     "cv04": "ignore",
     "cv31": "ignore",
@@ -22,12 +22,12 @@
     "cv99": "ignore",
     "ss01": "ignore",
     "ss02": "ignore",
-    "ss03": "ignore",
+    "ss03": "enable",
     "ss04": "ignore",
     "ss05": "ignore",
     "ss06": "ignore",
     "ss07": "ignore",
-    "ss08": "ignore",
+    "ss08": "enable",
     "zero": "ignore"
   },
   "nerd_font": {
@@ -41,7 +41,7 @@
     "extra_args": []
   },
   "cn": {
-    "enable": false,
+    "enable": true,
     "with_nerd_font": true,
     "fix_meta_table": true,
     "clean_cache": false,
