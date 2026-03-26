@@ -1380,7 +1380,7 @@ def build_cn(f: str, font_config: FontConfig, build_option: BuildOption):
         # Change glyph width and keep monospace identifier will cause
         # Intellij IDEA / Windows Notepad and other applications to
         # render the font incorrectly. See details in #249
-        if target_width:
+        if target_width and font_config.get_width_name() != "slim":
             cn_font["post"].isFixedPitch = False  # type: ignore
             cn_font["OS/2"].panose.bProportion = 0  # type: ignore
             cn_font["OS/2"].panose.bSpacing = 0  # type: ignore
